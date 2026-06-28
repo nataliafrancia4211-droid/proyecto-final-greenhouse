@@ -1,0 +1,110 @@
+@use 'variables';
+@use 'reset';
+
+// ==========================================
+// ESTILOS PARA LA PORTADA (Hero Banner)
+// ==========================================
+.hero-container {
+  overflow: hidden;
+  max-height: 60vh;
+
+  @media screen and (min-width: 768px) {
+    max-height: 75vh;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-height: 85vh;
+  }
+
+  .hero-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+  }
+}
+
+// ==========================================
+// ESTILOS PARA LA PÁGINA DE MODELOS
+// ==========================================
+
+// Combinamos clases (.card .modelo-img) para darle más fuerza al selector y quitar el !important
+.card {
+  &.bg-dark {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-10px); 
+      border-color: variables.$color-primario; // Uso dinámico de la variable
+      box-shadow: 0 12px 24px rgba(25, 135, 84, 0.25);
+      
+      .modelo-img {
+        transform: scale(1.04);
+      }
+    }
+  }
+
+  .modelo-img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease-in-out;
+  }
+}
+
+// ==========================================
+// ESTILOS PARA LA PÁGINA DE CONTACTO
+// ==========================================
+.input-personalizado {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+  &:focus {
+    background-color: #1a1a1a; 
+    color: variables.$color-texto;
+    border-color: variables.$color-primario; 
+    box-shadow: 0 0 8px rgba(25, 135, 84, 0.3);
+  }
+}
+
+// ==========================================
+// ESTILOS PARA LA PÁGINA DE PROCESO
+// ==========================================
+.proceso-img {
+  width: 100%;
+  height: 320px; 
+  max-height: 320px; 
+  object-fit: cover; 
+  display: block;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    border-color: variables.$color-primario;
+    transform: scale(1.02);
+  }
+}
+
+// ==========================================
+// ESTILOS PARA LA PÁGINA DE PLANES (Tablas)
+// ==========================================
+.table-responsive.rounded-4 {
+  overflow: hidden; 
+}
+
+.table-hover tbody tr {
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  
+  &:hover td {
+    color: variables.$color-texto; 
+  }
+}
+
+// ==========================================
+// ESTILO PARA LA IMAGEN DE LA FÁBRICA
+// ==========================================
+.fabrica-img {
+  height: 180px; 
+  width: 100%; 
+  object-fit: cover; 
+  display: block;
+}

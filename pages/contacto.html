@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | GreenHouse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                    <img src="../img/logo.png" alt="GreenHouse" class="gh-logo">
+                    <span class="fw-bold">GreenHouse</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="modelos.html">Modelos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="proceso.html">Proceso</a></li>
+                        <li class="nav-item"><a class="nav-link" href="planes.html">Planes</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <main class="container my-5 py-4">
+        <h1 class="text-center mb-3 fw-bold text-white">Ponte en Contacto</h1>
+        <p class="text-center text-secondary mb-5">¿Tienes dudas sobre los sistemas de construcción o financiamiento? Estamos para ayudarte.</p>
+        
+        <div class="row g-5">
+            <!-- COLUMNA 1: FORMULARIO -->
+            <div class="col-12 col-md-6">
+                <div class="p-4 rounded-4 bg-dark border border-secondary shadow">
+                    <h3 class="h4 fw-bold mb-4 text-success">Envíanos un mensaje</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label text-secondary">Nombre Completo</label>
+                            <input type="text" class="form-control bg-dark text-white border-secondary input-personalizado" id="nombre" placeholder="Juan Pérez" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-secondary">Correo Electrónico</label>
+                            <input type="email" class="form-control bg-dark text-white border-secondary input-personalizado" id="email" placeholder="nombre@correo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label text-secondary">Tu Consulta</label>
+                            <textarea class="form-control bg-dark text-white border-secondary input-personalizado" id="mensaje" rows="4" placeholder="Cuéntanos en qué modelo o plan estás interesado..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100 fw-bold py-2 mt-3">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- COLUMNA 2: INFORMACIÓN DE ATENCIÓN -->
+            <div class="col-12 col-md-6">
+                <div class="p-4 rounded-4 bg-dark border border-secondary h-100 shadow d-flex flex-column justify-content-between">
+                    <div>
+                        <h3 class="h4 fw-bold mb-4 text-success">Atención Directa</h3>
+                        
+                        <div class="mb-4">
+                            <h5 class="fw-bold mb-1 text-white">💬 WhatsApp Central</h5>
+                            <p class="text-secondary mb-1">+598 90 000 000</p>
+                            <span class="badge bg-success-subtle text-success">Respuesta inmediata</span>
+                        </div>
+
+                        <div class="mb-4">
+                            <h5 class="fw-bold mb-1 text-white">🕒 Horarios de Fábrica y Oficinas</h5>
+                            <p class="text-secondary mb-1">Lunes a Viernes: 09:00 - 18:00 hs</p>
+                            <p class="text-secondary mb-0">Sábados: 09:00 - 13:00 hs</p>
+                        </div>
+                    </div>
+
+                    <!-- Cuadro decorativo que simula la ubicación/mapa -->
+                    <div class="p-3 bg-secondary bg-opacity-10 border border-secondary rounded-3 text-center">
+                        <p class="mb-1 fw-bold text-white">📍 Planta Industrial y Oficinas</p>
+                        <p class="small text-secondary mb-0">Maldonado, Uruguay</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER ACTUALIZADO -->
+    <footer class="bg-dark text-white text-center py-4 border-top border-secondary mt-5">
+        <div class="container">
+            <div class="mb-3">
+                <p class="mb-1 text-secondary small">Síguenos en nuestras redes:</p>
+                <a href="https://www.instagram.com/" class="text-success me-3 text-decoration-none small" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/" class="text-success me-3 text-decoration-none small" target="_blank">Facebook</a>
+                <a href="https://www.linkedin.com/feed/" class="text-success text-decoration-none small" target="_blank">LinkedIn</a>
+            </div>
+            <p class="mb-0 text-secondary small">&copy; 2026 GreenHouse. Desarrollado para la Evaluación Final.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
